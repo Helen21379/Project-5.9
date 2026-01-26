@@ -34,7 +34,6 @@ body {
   margin: 60px auto;
   background: #FFFFFF;
   border-radius: 6px;
-  overflow: hidden;
 }
 
 .page-image {
@@ -243,18 +242,10 @@ body {
 }
 
 .radio-item {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.radio-item {
   display: flex;
   align-items: center;
   gap: 6px;
   position: relative;
-  pointer-events: none;
 }
 
 .radio-text {
@@ -264,7 +255,7 @@ body {
 .info-item {
   position: relative;
   display: inline-flex;
-   pointer-events: auto;
+   
 }
 
 .info-icon {
@@ -284,7 +275,8 @@ body {
   position: absolute;
   top: -8px;
   left: 50%;
-  transform: translate(-50%, -100%);
+  pointer-events: none;
+  /* transform: translate(-50%, -100%); */
 
   width: 240px;
   padding: 8px;
